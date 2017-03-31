@@ -74,7 +74,7 @@ def follow_user_tag(tag):
 		InstagramAPI.follow(i["pk"])
 
 
-InstagramAPI.getUserTags("3D")
-#for i in InstagramAPI.LastJson["users"]:
-#	print i
-import pdb; pdb.set_trace()
+InstagramAPI.searchUsers("Sevilla")
+for i in InstagramAPI.LastJson["users"]:
+	print i["username"]
+#import pdb; pdb.set_trace()
